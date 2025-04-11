@@ -26,7 +26,7 @@ const todoService = {
   createTodo: async (title) => {
     try {
       const response = await axios.post(
-        `${API_URL}/todos`,
+        `${API_URL}/api/v1/todos`,
         { title },
         getAuthHeader()
       );
@@ -40,7 +40,7 @@ const todoService = {
   updateTodo: async (id, updates) => {
     try {
       const response = await axios.put(
-        `${API_URL}/todos/${id}`,
+        `${API_URL}/api/v1/todos/${id}`,
         updates,
         getAuthHeader()
       );
@@ -53,7 +53,7 @@ const todoService = {
 
   deleteTodo: async (id) => {
     try {
-      await axios.delete(`${API_URL}/todos/${id}`, getAuthHeader());
+      await axios.delete(`${API_URL}/api/v1/todos/${id}`, getAuthHeader());
     } catch (error) {
       console.error("Error deleting todo:", error);
       throw error;
