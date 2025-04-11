@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "import.meta.env.VITE_API_URL";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const getAuthHeader = () => {
   const token = localStorage.getItem("token");
@@ -15,7 +15,7 @@ const getAuthHeader = () => {
 const todoService = {
   getAllTodos: async () => {
     try {
-      const response = await axios.get(`${API_URL}/todos`, getAuthHeader());
+      const response = await axios.get(`${API_URL}/api/v1/todos`, getAuthHeader());
       return response.data;
     } catch (error) {
       console.error("Error fetching todos:", error);
