@@ -20,7 +20,7 @@ const Register = () => {
       console.log("Sending registration request:", formData);
 
       const response = await axios.post(
-        "http://localhost:3000/api/v1/auth/register",
+        `${import.meta.env.VITE_API_URL}/auth/register`,
         formData,
         {
           headers: {
