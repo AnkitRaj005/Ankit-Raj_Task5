@@ -27,7 +27,7 @@ A full-stack ToDo application built using the **MERN stack** (MongoDB, Express, 
 
 # ToDo MERN App – Frontend
 
-This is the **frontend** of the ToDo MERN App — a full-stack task management application built using the MERN stack. The frontend is developed in **React.js** with **Vite**, and communicates with a secure backend via RESTful APIs to perform user authentication and manage todos.
+ The frontend is developed in **React.js** with **Vite**, and communicates with a secure backend via RESTful APIs to perform user authentication and manage todos.
 
 Live Demo: [https://ankit-raj-task5client.vercel.app](https://ankit-raj-task5client.vercel.app)
 
